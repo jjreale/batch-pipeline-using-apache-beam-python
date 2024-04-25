@@ -10,7 +10,7 @@ def discard_incomplete(data):
     """Filters out records that don't have an information."""
     return len(data['abv']) > 0 and len(data['id']) > 0 and len(data['name']) > 0 and len(data['style']) > 0
 
-
+# comentario
 def convert_types(data):
     """Converts string values to their appropriate type."""
     data['abv'] = float(data['abv']) if 'abv' in data else None
